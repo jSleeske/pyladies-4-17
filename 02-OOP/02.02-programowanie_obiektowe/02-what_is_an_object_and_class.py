@@ -1,15 +1,15 @@
 '''
-    Klasa to pewien szablon/plan według którego tworzone są obiekty
+    Klasa to pewien szablon/plan według którego tworzone są instancje
     danej klasy. Sama w sobie nie zawiera żadnych konretnych danych,
-    a jedynie informacje o właściwościach i funkcjach jakie będzie 
-    miał do dyspozycji każdy obiekt.
+    a jedynie informacje o atrybutach i metodach jakie będzie 
+    miał do dyspozycji każdy stworzony obiekt danej klasy.
 '''
 '''
     Obiekt to instancja danej klasy zawierająca konkretne dane, 
-    czyli przypisane wartości do właściwości.
-    Jeśli zdefiniujemy klasę Samochód z właściwościami marka, model,
-    to obiekt tej klasy pod właściowością marka może mieć wartość np.
-    'Mercedes-Benz', 'Fiat', a pod właściwością model - 'SLS', 'Punto'.
+    czyli przypisane wartości do atrybutów.
+    Jeśli zdefiniujemy klasę Samochód z atrybutami marka, model,
+    to obiekt tej klasy pod atrybutem marka może mieć wartość np.
+    'Mercedes-Benz', 'Fiat', a pod atrybutem model - 'SLS', 'Punto'.
 '''
 
 
@@ -24,12 +24,12 @@ class Person:
 if __name__ == '__main__':
     '''
         W tym miejscu nastepuje stworznie nowego obiektu klasy Person.
-        Zmienna person wskazuje na konkretny obiekt klasy Person.
+        Zmienna person wskazuje na konkretny instancję klasy Person.
     '''
     person = Person()
 
     '''
-        Ustawmy jakieś właściwości...
+        Ustawmy wartości atrybutów...
     '''
     person.name = 'John'
     person.age = 45
@@ -45,6 +45,5 @@ if __name__ == '__main__':
 
     '''
         Wygląda całkiem podobnie do wyciągania wartości ze słownika?
-        Tak! Nie trzeba przy tym uzywać tych paskudnych nawiasów albo 
-        metody get() ;)
+        Tak! Nie trzeba przy tym uzywać nawiasów albo metody get() ;)
     '''

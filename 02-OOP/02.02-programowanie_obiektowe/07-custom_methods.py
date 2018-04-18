@@ -1,6 +1,6 @@
 '''
-    Tak jak zostało to wspomniane klasy to zbiór właściowści (danych)
-    i metod (funkcji), które na tych danych operują.
+    Tak jak zostało to wspomniane klasy to zbiór nie tylko
+    atrybutów (danych) ale i metod (funkcji), które na tych danych operują.
 
     Nie jesteśmy w żaden sposób ograniczeni jeśli chodzi o dodawanie
     własnych metod do klas. Musimy tylko pamiętać, o tym dodatkowym

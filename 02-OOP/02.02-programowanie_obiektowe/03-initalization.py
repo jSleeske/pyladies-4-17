@@ -24,20 +24,21 @@
 
 '''
     Powyższy kod nie wygląda zbyt czysto ani zwięźle. Dla każdego nowego obiektu
-    przypisujemy do 4 właściwości dane. Nawet wykonując taki kod w pętli
+    przypisujemy do 4 atrybutów dane. Nawet wykonując taki kod w pętli
     nie rozwiązujemy naszego problemu, bo jeśli w innym miejscu programu będziemy 
-    musieli stworzyć nowy obiekt danego typu, to czeka nas przepisywanie wszystkiego
+    musieli stworzyć nowy obiekt danej klasy, to czeka nas przepisywanie wszystkiego
     od nowa :(
 
     Jak temu zaradzić?
 
-    KONSTRUKTOR 
+    Magiczną metodą __init__()
 '''
 
 '''
-    Konstruktor, to taka specjalna metoda (funkcja 'należąca' do obiektu), która
-    zostanie wykonana tylko raz dla każdego obiektu - w czasie jego tworzenia.
-    Możemy do niej przekazać argumenty i zainicjalizować nimi obiekt. 
+    __init__(), to taka specjalna metoda (funkcja 'należąca' do obiektu),
+    która zostanie wykonana tylko raz dla każdego obiektu - tuż po jego
+    utworzeniu. Możemy do niej przekazać argumenty i dalej zainicjalizować
+    nimi obiekt. 
 '''
 
 
@@ -47,7 +48,7 @@ class Person:
             __init__ to nazwa metody-konstruktora wywoływanej w czasie
             tworzenia nowego obiektu danej klasu (nie musimy tego robić
             jawnie). Argument self jest wymagany i wskazuje on na
-            konstruowany obiekt.
+            świeżo skonstruowany obiekt.
         '''
         self.name = name
         self.age = age
@@ -59,6 +60,7 @@ if __name__ == '__main__':
     '''
         Argument self jest przekazywany niejawnie - nie musimy się nim martwić.
         Jest natomiast jawnie odbierany - czyli deklarujemy go w metodzie __init__
+        jako pierwszy argument.
     '''
     a_person = Person('John', 45, 'male', 'janitor')
 

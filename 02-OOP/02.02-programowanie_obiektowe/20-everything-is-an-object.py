@@ -71,3 +71,8 @@ def call_a_function_with_param(param, func):
 
 
 call_a_function_with_param('John', greet)  # ?
+
+
+'''
+PS Klasy też są obiektami
+'''

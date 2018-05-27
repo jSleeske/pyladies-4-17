@@ -5,7 +5,7 @@ ale pozwalający pisać czysty i zwięzły kod.
 
 Samo słowo dziedzieczenie, jest już w miarę mówiące - dostajemy
 coś po czymś 'w spadku'. W przypadku Pythona, otrzymujemy właśnie
-cechy i metody obiektu po którym dziedziczymy.
+cechy i metody klasy po której dziedziczymy.
 
 Skoro i tak jesteśmy na głębokiej wodzie, to po raz kolejny zacznijmy od
 przykładu:

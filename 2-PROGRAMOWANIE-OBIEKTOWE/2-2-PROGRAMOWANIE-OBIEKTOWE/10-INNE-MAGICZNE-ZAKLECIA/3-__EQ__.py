@@ -1,5 +1,5 @@
 '''
-Wykorzystajmy naszą klasę Book z pliku __STR__.py
+Wykorzystajmy naszą klasę Book z pliku 1-__STR__.py
 
 >>> class Book:
 >>>     def __init__(self, author, title, page_count, price):
@@ -24,7 +24,7 @@ Co za los! Pomimo tego, że nasze książki pozornie wydają się takie same,
 to jednak użycie operatora równości zwróciło False.
 
 Dlaczego tak się stało? Domyślnie operator równości (==) sprawdza, czy dwie
-zmienne (po jego lewej i prawej stronie wskazują na ten sam obiekt).
+zmienne (po jego lewej i prawej stronie) wskazują na ten sam obiekt.
 
 Jeśli chcemy nadpisać działanie w/w operatora, musimy nadpisać metodę __eq__.
 
@@ -54,8 +54,8 @@ class Book:
         return f'Book info: {self.title} by {self.author}'
 
     def __eq__(self, other):
-        same_author = self.author == other.author
-        same_title = self.title == other.title
+        same_author = (self.author == other.author)
+        same_title = (self.title == other.title)
 
         return same_author and same_title
 

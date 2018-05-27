@@ -91,7 +91,9 @@ while True:
 
 '''
 Jak widać mamy tutaj jedną klasę bazową Animal, która definiuje,
-ale nie implementuje metodę make_sound().
+ale nie implementuje metodę make_sound(). O takiej metodzie w klasie,
+która jest zedfiniowana, ale nie zaimplementowana mówimy, że jest
+ABSTRAKCYJNA.
 
 Metoda make_sound() jest częścią interfejsu. Interfejs to pojęcie o
 wielu znaczeniach, ale w programowu obiektowym przyjęło się, że jest

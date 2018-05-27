@@ -1,5 +1,5 @@
 '''
-Stwórz klasę Kształt, posiadającą  metodę get_area(),
+Stwórz klasę Kształt, posiadającą metodę abstrakcyjną get_area(),
 a następnie zaimplementuj klasy: Trójkąt, Prostokąt oraz Koło,
 które będą nadpisywały w/w metodę, tak aby zwracać poprawny
 wynik obliczeń dla odpowiedniej figury geometryczne.

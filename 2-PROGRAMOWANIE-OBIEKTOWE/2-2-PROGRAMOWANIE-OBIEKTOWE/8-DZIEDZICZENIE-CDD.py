@@ -23,6 +23,7 @@ Czas na małą poparawkę w naszym kodzie:
 >>>         self.page_count = page_count
 >>>         self.has_hardcover = has_hardcover
 
+
 >>> audiobook = Audiobook(author='A. Sapkowski',
 >>>                       title='Krew Elfów',
 >>>                       price=15.67,
@@ -173,6 +174,7 @@ parametrów.
 
 Poprawny przykład:
 '''
+
 print('Tworzę nowy obiekt klasy Audiobook',
       'używając stylu mieszanego - keyworded args na końcu'
       )
@@ -182,3 +184,11 @@ audiobook = Audiobook(347,
                       title='Krew Elfów',
                       price=15.67,
                       )
+
+'''
+Dzięki takiemu podejściu, metodę __init__ klas dziedziczących interesuje
+tylko to, czy dostały parametry, których wymagają do poprawnego
+zaincjalizowania obiektu 'na swoim poziomie', pozostałe przekazane
+paramtery przekazują 'wyżej' gdzie kolejna wartstwa logiki, sprawdza,
+czy dostała to czego potrzebuje. I tak dalej!
+'''

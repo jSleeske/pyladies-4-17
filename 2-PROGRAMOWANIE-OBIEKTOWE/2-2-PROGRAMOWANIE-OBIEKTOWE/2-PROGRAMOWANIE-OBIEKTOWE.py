@@ -19,18 +19,18 @@ Co jeśli postanowilibyśmy stowrzyć mu drugiego człowieczka,
 >>> human2.surname = 'Smith'
 >>> human2.age = 68
 
-Dużo powtarzania się... i w zasadzie po co nam to całe
+Dużo powtarzania się... i w zasadzie po co nam ta cała klasa
 >>> class Person:
 >>>    pass
 
-skoro to praktycznie nic nie robi...
+skoro praktycznie nic nie robi...
 
-Ale może! Oraz powinna?
+Ale może! Oraz powinna!
 A co dokładnie powinna robić?
 Na przykład mówić nam w jaki sposób inicjalizowane
 mają być nowe obiekty danej klasy.
 Do kontrolowania tego zachowania służy metoda __init__.
-Tak, jest magiczna
+Tak, jest magiczna.
 '''
 
 

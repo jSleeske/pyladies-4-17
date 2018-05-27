@@ -17,8 +17,8 @@ Stworzyliśmy sobie także nowy obiekt tej ksiązki:
 Następnie wyprintowaliśmy sobie informacje o nim za pomocą metody info()
 >>> print(book1)
 
-A nie! Przez gapiostwo zapomnieliśmy o wywołaniu metody. Zamiast ładnego
-komunikatu otrzymaliśmy coś takiego:
+A nie! Przez gapiostwo zapomnieliśmy o wywołaniu metody i przekazaliśmy sam
+obiekt. Zamiast ładnego komunikatu otrzymaliśmy coś takiego:
 <__main__.Book object at 0x7f27f8b06278>
 
 Hej, dobra wiadomość jest taka, że przynajmniej program się nie wywalił.

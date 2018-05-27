@@ -64,5 +64,4 @@ metody __bool__ ma sens.
 Powyższy zapis nie pozwoli nam się od razu zorientować, że pod spodem
 sprawdzana jest ilość egzemplarzy, i może sprawić, że kod bedzie mniej
 czytelny.
-
 '''

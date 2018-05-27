@@ -1,10 +1,9 @@
 '''
 Hej, to self musiała mocno zamieszać. Niestety tak
-to już jest w Pythonie, co jeszcze bardziej
-którego podejście do obiektów jest zdecydowanie
-inne od większości popularnych języków programowania.
-Przed przejściem dalej przeczytaj sobie podsumowanie tego
-co było do tej pory.
+to już jest w Pythonie,którego podejście do obiektów jest
+zdecydowanie inne od większości popularnych języków
+programowania. Przed przejściem dalej przeczytaj sobie
+podsumowanie tego co było do tej pory.
 
 Czym różni się klasa od obiektu klasy w Pythonie?
 
@@ -33,6 +32,9 @@ AttributeError: type object 'Book' has no attribute 'title'
 
 Bo to tak jakbyście spróbowali powiedzieć, że każda książka posiada
 taki sam tytuł.
+
+Konkretna klasa może być tylko jedna w całym programie, natomiast
+obiektów danej klasy - ile tylko chcemy!
 
 Najpierw należy stworzyć nowy obiekt danej klasy, podając jej nazwę oraz
 nawiasy okrągłe, w których umieszczamy parametry - konkretne wartości dla

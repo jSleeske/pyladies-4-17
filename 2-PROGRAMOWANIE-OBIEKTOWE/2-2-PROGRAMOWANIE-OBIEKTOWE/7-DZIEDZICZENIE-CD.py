@@ -1,6 +1,6 @@
 '''
 Ideą dziedziczenia jest wyciąganie części wspólnej kodu, tak aby możliwie
-jak największe jego fragmenty nie duplikowała się w naszym programie. Ułatatwia
+jak największe jego fragmenty nie duplikowały się w naszym programie. Ułatatwia
 to wszelkie późniejsze modyfikacje oraz rozbudowę, skraca całość i zauważalnie
 wpływa na czytelność.
 
@@ -9,7 +9,7 @@ Audiobook oraz Paperbook. Chociaż w tamtym przykładzie klasy dziedziczące
 nie implementowały żadnej własnej logiki, to teraz to się zmieni. W klasie
 nadrzędnej umieściliśmy informacje o autorze, tytule oraz cenie - są to cechy,
 które niewątpliwie będą posiadały wszystkie książki, niezależnie od tego, czy
-będą książkami papierowymi, czy w formie do osłuchu. Jakie dodatkowe cechy,
+będą książkami papierowymi, czy w formie do odsłuchu. Jakie dodatkowe cechy,
 które nie występują w książkach drukowanychmogłyby posiadać audiobooki, i na
 odwrót?
 
@@ -44,7 +44,8 @@ class Paperbook(Book):
 
 
 '''
-Stwórzmy teraz nowe obiekty powyższych klas (wykorzystując 2 rózne style):
+Stwórzmy teraz nowe obiekty powyższych klas (wykorzystując 2 rózne style
+przekazywania paramterów):
 '''
 
 audiobook = Audiobook(author='A. Sapkowski',
@@ -74,7 +75,7 @@ BŁĄD!
 
 Ale jak to?
 Przecież klasa Book dostarcza metodę __init__, w której incjalizowany
-jest atrybut title. Hmmm, dziwna sprawa, o co może chodzić?
+jest atrybut title. Hmmm, dziwna sprawa... o co może chodzić?
 
 Wróćmy na chwilę do pliku 3-MAGICZNE-SELF.py. Są tam wymienione kroki,
 które wykonuje Python, podczas tworzenia nowego obiektu danej klasy.
@@ -96,11 +97,11 @@ Hmm, czyli nie o to chodzi.
 
 Czyli o co???
 
-O to, że jeśli nadpiszemy metodę __init__ (lub w gruncie rzeczy jakąkolwiek
-inną), to metoda z klasy nadrzędnej nie zostanie wykonana! Mamy na to wpływ,
-i powinnśmy to zmieniać w zależności od efektu jaki chcielibyśmy osiągnąć.
-W powyższym przypadku niewątpliwie chcemy mieć dostęp do tych wszystkich
-atrybutów naszej klasy nadrzędnej (superklasy), a więc w metodzie __init__
-klasy dziedziczącej musimy, już tym razem jawnie, wywołać metodę __init__
-naszej superklasy.
+Chodzi o to, że jeśli nadpiszemy metodę __init__ (lub w gruncie rzeczy
+jakąkolwiek inną), to metoda z klasy nadrzędnej nie zostanie wykonana!
+Mamy na to wpływ, i powinnśmy to zmieniać w zależności od efektu jaki
+chcielibyśmy osiągnąć. W powyższym przypadku niewątpliwie chcemy mieć dostęp
+do tych wszystkich atrybutów naszej klasy nadrzędnej (superklasy), a więc w
+metodzie __init__ klasy dziedziczącej musimy, już tym razem jawnie, wywołać
+metodę __init__ naszej superklasy.
 '''
